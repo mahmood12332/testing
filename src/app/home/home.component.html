@@ -1,0 +1,14 @@
+<p class="abcd">
+  home works!
+</p>
+<h1>{{ count }}</h1>
+<form>
+
+<input type="text" name="item" [(ngModel)]="texxts" >
+<input type="submit" [value]="texts"  (click)="addItem()">
+</form>
+<div>
+  <p class="abcd" *ngFor="let goal of goals" >
+    {{ goal }}
+  </p>
+</div>
